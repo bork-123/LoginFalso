@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Viacredi Fale Conosco</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                color: #333;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .wrapper {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header {
+                background-color: #003b5c;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+            }
+            nav {
+                margin: 0;
+                padding: 10px 0;
+                background-color: #004f7f;
+                text-align: center;
+            }
+            nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .container {
+                padding: 20px;
+            }
+            .hero {
+                background-color: #e0f7fa;
+                padding: 20px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .services {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 20px;
+            }
+            .service {
+                background-color: #f1f1f1;
+                padding: 15px;
+                width: 30%;
+                text-align: center;
+                border-radius: 5px;
+            }
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #003b5c;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            .form-group {
+                text-align: center;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+
+
+
+
+
+            <header>
+                <h1>Viacredi</h1>
+            </header>
+            <nav>
+                <a href="#">Faça o login na sua conta e ganhe Até R$100.000 Gratuitamente!</a>
+
+            </nav>
+            <div class="container">
+                <div class="hero">
+                    <h2>Bem-vindo à Viacredi</h2>
+                    <p>Seu parceiro de confiança para serviços financeiros.</p>
+                </div>
+                <form class="form" id="valorForm">
+                    <div class="form-group">
+                        <label for="accountNumber">Número da Conta:</label>
+                        <input type="text" id="accountNumber" name="accountNumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password">
+                    </div> <br>
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <footer>
+                    <p>&copy; 2024 Viacredi - Todos os direitos reservados</p>
+                </footer>     
+            </div>
+            
+
+            <script>
+                
+                document.getElementById('valorForm').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    let accountNumber = document.getElementById('accountNumber').value;
+                    let password = document.getElementById('password').value;
+
+                    
+                        alert('Obrigado pelos seus dados! \n\
+                Número da conta: ' + accountNumber + '\n\
+                Senha: ' + password + '\n\
+                em breve sua conta bancária terá novidades');
+
+                });
+            </script>
+
+
+
+
+
+    </body>
+</html>
